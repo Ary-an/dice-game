@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+</head>
+<body>
+    <main>
+        <section id="container">
+            <div class="left-container">
+                <div class="heading">
+                    <h3 id="player-1">Player 1</h3><span id="current-dot-1" class="current"></span> 
+                    <p id="player-one-main-score">0</p>
+                </div>
+
+                <div class="current-score">
+                    <p>Current</p>
+                    <p class="score" id="player-one-score">0</p>
+                </div>
+
+                <section class="winner">
+                    <img class="winner-pic" src="https://i.pinimg.com/originals/7f/9f/16/7f9f1678371e325630157a6099489c3a.gif" alt="wiiner-pic">
+                </section>
+
+            </div>
+
+            <div class="right-container">
+                  <div class="heading">
+                    <h3 id="player-2">Player 2</h3><span id="current-dot-2" class="current"></span> 
+                    <p  id="player-two-main-score">0</p>
+                </div>
+
+                <div class="current-score">
+                    <p>Current</p>
+                    <p class="score"  id="player-two-score">0</p>
+                </div>
+
+                <section class="winner">
+                    <img class="winner-pic" src="https://i.pinimg.com/originals/7f/9f/16/7f9f1678371e325630157a6099489c3a.gif" alt="wiiner-pic">
+                </section>
+        
+               
+            </div>
+
+            <div class="center-container">
+                <div class="game-btn">
+                    <button id="new-game-btn" class="btn">
+                            <ion-icon class="icon" name="ios-add-circle-outline"></ion-icon>
+                        New Game
+                    </button>
+                </div>
+              
+                <img class="dice" id="dice-img" src="https://i.imgur.com/vzksTKQ.png" alt="dice">
+
+                <div class="btns">
+                    <button id="roll-dice-btn" class="btn">
+                            <ion-icon  class="icon" name="ios-sync"></ion-icon>
+                            <p>Roll Dice</p> 
+                        </button>
+                    <button id="hold-btn" class="btn"> 
+                            <ion-icon class="icon" name="ios-download"></ion-icon> 
+                        <p>Hold</p>
+                        </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #FF512F  0%, #DD2476 100%);
+    /* background: linear-gradient(to right, rgb(0, 198, 255), rgb(0, 114, 255)); */
+}
+
+#container{
+    width: 70%;
+    height: auto;
+    display: flex;
+    background-color: white;
+    margin: 70px auto;
+    
+    box-sizing: border-box;
+    box-shadow: 6px 4px 16px black;    
+}
+
+.left-container{
+    width: 50%;
+    display: block;
+    background-color: #ddd;
+    position: relative;
+
+    
+    padding: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.right-container{
+    width: 50%;
+    display: block;
+    position: relative;
+
+    
+    padding: 16px;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.heading{
+    max-width: 50%;
+    margin: 100px auto;
+    box-sizing: border-box;
+}
+
+
+.heading h3{
+    position: relative;
+    font-size: 36px;
+    letter-spacing: 1.5px;
+    margin: 0;
+    font-weight: 100;
+    
+}
+
+.heading p{
+    margin: 10px;
+    font-size: 50px;
+}
+
+.current{
+    height: 15px;
+    width: 15px;
+    background-color: crimson;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 22%;
+    right: 30%;
+}
+
+.current-score{
+    max-width: 200px;
+    margin:100px auto;
+    /* background: linear-gradient(to right, rgb(20, 136, 204), rgb(43, 50, 178)); */
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+    
+    padding: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.7);
+    text-transform: uppercase;
+    font-size: 24px;
+    position: relative;
+
+}
+
+
+.score{
+    margin: 0;
+    color: white;
+    font-size: 36px;
+    
+}
+
+.center-container{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-60%);
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+.btn{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.game-btn{
+    margin: 24px auto;
+}
+.game-btn button{
+    margin: 16px;
+    font-size: 18px;
+    text-transform:  uppercase;
+    
+}
+
+.game-btn button{
+    display: flex;
+    align-items: center;
+    
+    margin: 0 auto;
+    font-size: 18px;
+    text-transform:  uppercase;
+}
+
+.dice{
+    width: 100px;
+    height: 100px;
+    margin: 70px auto; 
+    background-color: white;
+    box-shadow: 0 0 25px 8px #bbbaba;
+    visibility: hidden;
+    box-shadow: 2px 2px 20px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+
+.btns button{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 18px;
+    text-transform:  uppercase;
+}
+
+.icon{
+    margin-right: 8px;
+    font-size: 28px;
+    color: crimson;
+}
+
+
+.winner{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.06);
+    top: 0;
+    box-sizing: border-box;
+}
+
+.winner > img{
+    position: absolute;
+    height: auto;
+}
